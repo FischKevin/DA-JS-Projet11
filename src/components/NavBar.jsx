@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import '../sass/components/_navbar.scss';
+
 
 function NavBar() {
   return (
-    <nav>
-      <Link to="/">Accueil</Link>
-      <Link to="/A-Propos">A Propos</Link>
+    <nav className='NavBar'>
+      <NavLink to="/" className={({ isActive }) => isActive ? 'active' : undefined}>Accueil</NavLink>
+      <NavLink to="/APropos" className={({ isActive }) => isActive ? 'active' : undefined}>A Propos</NavLink>
     </nav>
   );
 }

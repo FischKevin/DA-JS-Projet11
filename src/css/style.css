@@ -17,16 +17,15 @@ header {
   height: 68px;
 }
 
-nav a {
+.NavBar a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   margin-left: 30px;
   font-size: 24px;
   color: #FF6060;
 }
-nav a:hover {
+.NavBar a.active {
   text-decoration: underline;
-  text-decoration-color: #FF6060;
 }
 
 /*# sourceMappingURL=style.css.map */
