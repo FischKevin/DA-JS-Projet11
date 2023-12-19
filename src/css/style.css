@@ -25,7 +25,8 @@ nav a {
   color: #FF6060;
 }
 nav a:hover {
-  text-decoration: solid 1px #FF6060;
+  text-decoration: underline;
+  text-decoration-color: #FF6060;
 }
 
 /*# sourceMappingURL=style.css.map */

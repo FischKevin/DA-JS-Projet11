@@ -6,7 +6,9 @@ nav a {
   margin-left: 30px;
   font-size: 24px;
   color: $primary-color;
+
   &:hover {
-    text-decoration:solid 1px $primary-color;
+    text-decoration: underline;
+    text-decoration-color: $primary-color;
   }
 }
