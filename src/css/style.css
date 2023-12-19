@@ -1,0 +1,31 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1240px;
+  margin: 40px auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.logo {
+  height: 68px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 30px;
+  font-size: 24px;
+  color: #FF6060;
+}
+nav a:hover {
+  text-decoration: solid 1px #FF6060;
+}
+
+/*# sourceMappingURL=style.css.map */

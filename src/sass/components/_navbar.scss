@@ -1,0 +1,12 @@
+@import '../abstracts/variables'; 
+
+nav a {
+  text-decoration: none;
+  font-family: $primary-font;
+  margin-left: 30px;
+  font-size: 24px;
+  color: $primary-color;
+  &:hover {
+    text-decoration:solid 1px $primary-color;
+  }
+}
