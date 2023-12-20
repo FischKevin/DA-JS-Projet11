@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <nav className="NavBar">
       <NavLink to="/">Accueil</NavLink>
-      <NavLink to="/APropos">À Propos</NavLink>
+      <NavLink to="/APropos">A Propos</NavLink>
     </nav>
   );
 }
