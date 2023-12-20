@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Banner from './Banner';
 import Gallery from './Gallery';
+import Footer from './Footer';
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
         text="Chez vous, partout et ailleurs"
       />
       <Gallery />
+      <Footer />
     </>
   );
 }

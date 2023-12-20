@@ -1,18 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function Logo() {
+function Logo({ color = 'red' }) {
+  const logoSrc =
+    color === 'white' ? 'src/assets/LOGOfooter.png' : 'src/assets/LOGO.png';
+
   return (
-    <>
-      <Link to="/">
-        <img
-          src="src/assets/LOGO.png"
-          alt="Logo du site Kasa"
-          className="logo"
-        />
-      </Link>
-    </>
+    <Link to="/">
+      <img
+        src={logoSrc}
+        alt="Logo du site Kasa"
+        className={`logo logo-${color}`}
+      />
+    </Link>
   );
 }
+
+Logo.propTypes = {
+  color: PropTypes.oneOf(['red', 'white']),
+};
 
 export default Logo;

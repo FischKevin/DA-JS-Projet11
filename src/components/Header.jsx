@@ -5,7 +5,7 @@ import NavBar from './Navbar';
 function Header() {
   return (
     <header>
-      <Logo />
+      <Logo color="red" />
       <NavBar />
     </header>
   );

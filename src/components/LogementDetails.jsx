@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 function LogementDetails() {
   const [logement, setLogement] = useState(null);
   let { id } = useParams();
+  let navigate = useNavigate();
 
   useEffect(() => {
     fetch('/logements.json')
       .then(response => response.json())
       .then(data => {
         const foundLogement = data.find(item => item.id === id);
-        setLogement(foundLogement);
+        if (!foundLogement) {
+          navigate('/Error404', { replace: true });
+        } else {
+          setLogement(foundLogement);
+        }
       })
-      .catch(error => console.error('Error fetching data: ', error));
-  }, [id]);
+      .catch(error => {
+        console.error('Error fetching data: ', error);
+        navigate('/Error404', { replace: true });
+      });
+  }, [id, navigate]);
 
   if (!logement) {
     return <div>Chargement...</div>;
