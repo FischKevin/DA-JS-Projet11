@@ -1,0 +1,36 @@
+@import '../abstracts/variables'; 
+
+.BannerImage {
+  max-width: 1240px;
+  width: calc(100% - 30px);
+  height: 223px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin: 0 auto;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+  }
+}
+
+.BannerText {
+  font-family: $primary-font;
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
