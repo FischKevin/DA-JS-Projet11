@@ -42,6 +42,50 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+.collapse-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1240px;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.collapse-section .collapse-container {
+  border-radius: 5px;
+  max-width: 1023px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+.collapse-section .collapse-container .collapse-title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.collapse-section .collapse-container .collapse-title img {
+  height: 24px;
+  color: white;
+  width: 24px;
+}
+.collapse-section .collapse-container .collapse-content {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  background-color: #F6F6F6;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FF6060;
+  border-radius: 5px;
+}
+
 footer {
   background-color: black;
   text-emphasis: center;
