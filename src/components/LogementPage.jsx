@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
+import Slideshow from './Slideshow';
+import LogementInfo from './LogementInfo';
 
-function LogementDetails() {
+function LogementPage() {
   const [logement, setLogement] = useState(null);
   let { id } = useParams();
   let navigate = useNavigate();
@@ -28,11 +32,13 @@ function LogementDetails() {
   }
 
   return (
-    <div>
-      <h2>{logement.title}</h2>
-      <img src={logement.cover} alt={logement.title} />
-    </div>
+    <>
+      <Header />
+        <Slideshow logement={logement} />
+        <LogementInfo logement={logement} />
+      <Footer />
+    </>
   );
 }
 
-export default LogementDetails;
+export default LogementPage;

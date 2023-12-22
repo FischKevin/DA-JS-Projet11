@@ -1,0 +1,111 @@
+@import '../abstracts/variables'; 
+
+.topContainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 1240px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  justify-content: space-between;
+
+  .logementInfo {
+
+    .logementTitle {
+      color: $primary-color;
+      font-size: 36px;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 0px;
+    }
+
+    .logementLocation {
+      color: $primary-color;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: left;
+      margin-top: 5px;
+    }
+
+    .logementTags {
+      display: flex;
+      gap: 15px; 
+
+      .logementTag {
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+        background-color: $primary-color;
+        border-radius: 10px;
+        font-family: $primary-font;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .hostContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    .hostInfoContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+
+      .hostName {
+        display: block;
+        font-family: $primary-font;
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
+        width: 100px;
+        text-align: right;
+      }
+
+      .hostPicture {
+        width: 64px;
+        height: 64px;
+        border-radius: 50px;
+        margin-left: 15px;
+      }
+    }
+
+    .logementRating {
+      color: black;
+
+      .rating {
+        width: 250px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.logementInfo-collapseSection {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 25px;
+  max-width: 1240px;
+  width: calc(100% - 30px);
+
+  .collapse-container {
+    max-width: 582px;
+    width: 48%;
+    margin-bottom: 50px;
+
+    .collapse-title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    ul {
+      list-style: none;
+      margin-left: -40px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
+}
