@@ -6,11 +6,10 @@
   "homepage": "https://FischKevin.github.io/DA-JS-Projet11",
   "scripts": {
     "dev": "vite",
-    "predeploy": "vite build",
+    "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "format": "prettier --write './**/*.{js,jsx,css,html}'",
-    "deploy": "gh-pages -d dist"
+    "format": "prettier --write './**/*.{js,jsx,css,html}'"
   },
   "dependencies": {
     "eslint-config-standard": "^17.1.0",
