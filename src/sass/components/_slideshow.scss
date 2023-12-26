@@ -4,7 +4,7 @@
   width: calc(100% - 30px);
   display: flex;
   flex-direction: column;
-  margin: 0 auto;;
+  margin: 0 auto;
 
   .slideshowImg {
     width: 100%;
@@ -13,11 +13,14 @@
     border-radius: 25px;
     object-fit: cover;
     margin: 15px auto 0 auto;
+
+    @media (max-width: 400px) {
+      height: 225px;
+      margin: 0 auto 0 auto;
+    }
   }
 
   .image-nav-button {
-    height: 80px;
-    width: 50px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -25,16 +28,34 @@
     border: none;
     cursor: pointer;
 
+    img {
+      height: 80px;
+      width: 50px;
+
+      @media (max-width: 400px) {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
     &:focus {
       outline: none;
     }
 
     &.prev-button {
       left: 12px;
+
+      @media (max-width: 400px) {
+        left: 6px;
+      }
     }
 
     &.next-button {
       right: 20px;
+
+      @media (max-width: 400px) {
+        right: 10px;
+      }
     }
   }
 
@@ -47,5 +68,9 @@
     font-size: 18px;
     font-weight: 500;
     font-family: $primary-font;
+
+    @media (max-width: 400px) {
+      display: none;
+    }
   }
 }

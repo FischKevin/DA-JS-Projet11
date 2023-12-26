@@ -47,8 +47,14 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   max-width: 1240px;
+  width: calc(100% - 30px);
   align-items: center;
   margin: 40px auto 10px auto;
+}
+@media (max-width: 400px) {
+  .collapse-section {
+    margin: 25px auto 0 auto;
+  }
 }
 .collapse-section .collapse-container {
   border-radius: 5px;
@@ -56,6 +62,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
+}
+@media (max-width: 400px) {
+  .collapse-section .collapse-container {
+    margin-bottom: 25px;
+  }
 }
 .collapse-section .collapse-container .collapse-title {
   cursor: pointer;
@@ -69,10 +80,21 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   font-weight: 500;
 }
+@media (max-width: 400px) {
+  .collapse-section .collapse-container .collapse-title {
+    font-size: 13px;
+  }
+}
 .collapse-section .collapse-container .collapse-title img {
   height: 24px;
   color: white;
   width: 24px;
+}
+@media (max-width: 400px) {
+  .collapse-section .collapse-container .collapse-title img {
+    width: 16px;
+    height: 16px;
+  }
 }
 .collapse-section .collapse-container .collapse-content {
   padding: 20px;
@@ -83,6 +105,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #FF6060;
   border-radius: 5px;
+}
+@media (max-width: 400px) {
+  .collapse-section .collapse-container .collapse-content {
+    font-size: 11px;
+    padding: 10px;
+  }
 }
 
 footer {
@@ -103,6 +131,13 @@ footer .footer__text {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
+@media (max-width: 400px) {
+  footer .footer__text {
+    font-size: 12px;
+    width: 133px;
+    margin: 0 auto;
+  }
+}
 
 .gallerySection {
   margin: 40px auto;
@@ -113,8 +148,15 @@ footer .footer__text {
   justify-content: space-evenly;
   align-items: center;
   padding: 55px 0 20px 0;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
+}
+@media (max-width: 400px) {
+  .gallerySection {
+    background-color: white;
+    margin: 0 auto;
+    padding: 55px 0 0 0;
+  }
 }
 .gallerySection .logementCard {
   position: relative;
@@ -170,6 +212,11 @@ header {
   margin: 0 auto;
   justify-content: space-between;
 }
+@media (max-width: 400px) {
+  .topContainer {
+    flex-direction: column;
+  }
+}
 .topContainer .logementInfo .logementTitle {
   color: #FF6060;
   font-size: 36px;
@@ -177,12 +224,22 @@ header {
   text-align: left;
   margin-bottom: 0px;
 }
+@media (max-width: 400px) {
+  .topContainer .logementInfo .logementTitle {
+    font-size: 18px;
+  }
+}
 .topContainer .logementInfo .logementLocation {
   color: #FF6060;
   font-size: 18px;
   font-weight: 500;
   text-align: left;
   margin-top: 5px;
+}
+@media (max-width: 400px) {
+  .topContainer .logementInfo .logementLocation {
+    font-size: 14px;
+  }
 }
 .topContainer .logementInfo .logementTags {
   display: flex;
@@ -197,10 +254,22 @@ header {
   font-family: "Montserrat", sans-serif;
   padding: 5px 10px;
 }
+@media (max-width: 400px) {
+  .topContainer .logementInfo .logementTags .logementTag {
+    font-size: 10px;
+  }
+}
 .topContainer .hostContainer {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+}
+@media (max-width: 400px) {
+  .topContainer .hostContainer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
 }
 .topContainer .hostContainer .hostInfoContainer {
   display: flex;
@@ -217,11 +286,24 @@ header {
   width: 100px;
   text-align: right;
 }
+@media (max-width: 400px) {
+  .topContainer .hostContainer .hostInfoContainer .hostName {
+    font-size: 12px;
+    width: 60px;
+    margin-top: 0;
+  }
+}
 .topContainer .hostContainer .hostInfoContainer .hostPicture {
   width: 64px;
   height: 64px;
   border-radius: 50px;
   margin-left: 15px;
+}
+@media (max-width: 400px) {
+  .topContainer .hostContainer .hostInfoContainer .hostPicture {
+    width: 32px;
+    height: 32px;
+  }
 }
 .topContainer .hostContainer .logementRating {
   color: black;
@@ -229,6 +311,13 @@ header {
 .topContainer .hostContainer .logementRating .rating {
   width: 250px;
   text-align: right;
+}
+@media (max-width: 400px) {
+  .topContainer .hostContainer .logementRating .rating {
+    text-align: left;
+    width: 140px;
+    padding-top: 8px;
+  }
 }
 
 .logementInfo-collapseSection {
@@ -241,14 +330,30 @@ header {
   max-width: 1240px;
   width: calc(100% - 30px);
 }
+@media (max-width: 400px) {
+  .logementInfo-collapseSection {
+    flex-direction: column;
+  }
+}
 .logementInfo-collapseSection .collapse-container {
   max-width: 582px;
   width: 48%;
   margin-bottom: 50px;
 }
+@media (max-width: 400px) {
+  .logementInfo-collapseSection .collapse-container {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
 .logementInfo-collapseSection .collapse-container .collapse-title {
   font-size: 18px;
   font-weight: 500;
+}
+@media (max-width: 400px) {
+  .logementInfo-collapseSection .collapse-container .collapse-title {
+    font-size: 13px;
+  }
 }
 .logementInfo-collapseSection .collapse-container ul {
   list-style: none;
@@ -260,6 +365,11 @@ header {
 .logo {
   height: 68px;
 }
+@media (max-width: 505px) {
+  .logo {
+    height: 47px;
+  }
+}
 
 .NavBar a {
   text-decoration: none;
@@ -267,6 +377,11 @@ header {
   margin-left: 30px;
   font-size: 24px;
   color: #FF6060;
+}
+@media (max-width: 440px) {
+  .NavBar a {
+    font-size: 12px;
+  }
 }
 .NavBar a.active {
   text-decoration: underline;
@@ -288,9 +403,13 @@ header {
   object-fit: cover;
   margin: 15px auto 0 auto;
 }
+@media (max-width: 400px) {
+  .slideshowContainer .slideshowImg {
+    height: 225px;
+    margin: 0 auto 0 auto;
+  }
+}
 .slideshowContainer .image-nav-button {
-  height: 80px;
-  width: 50px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -298,14 +417,34 @@ header {
   border: none;
   cursor: pointer;
 }
+.slideshowContainer .image-nav-button img {
+  height: 80px;
+  width: 50px;
+}
+@media (max-width: 400px) {
+  .slideshowContainer .image-nav-button img {
+    height: 20px;
+    width: 20px;
+  }
+}
 .slideshowContainer .image-nav-button:focus {
   outline: none;
 }
 .slideshowContainer .image-nav-button.prev-button {
   left: 12px;
 }
+@media (max-width: 400px) {
+  .slideshowContainer .image-nav-button.prev-button {
+    left: 6px;
+  }
+}
 .slideshowContainer .image-nav-button.next-button {
   right: 20px;
+}
+@media (max-width: 400px) {
+  .slideshowContainer .image-nav-button.next-button {
+    right: 10px;
+  }
 }
 .slideshowContainer .slideshowPagination {
   position: absolute;
@@ -317,11 +456,22 @@ header {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
+@media (max-width: 400px) {
+  .slideshowContainer .slideshowPagination {
+    display: none;
+  }
+}
 
 .star {
   width: 36px;
   height: 36px;
   margin-left: 10px;
+}
+@media (max-width: 400px) {
+  .star {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .error-content {
@@ -335,13 +485,30 @@ header {
   font-weight: 700;
   margin: 60px 0;
 }
+@media (max-width: 600px) {
+  .title404 {
+    font-size: 190px;
+  }
+}
+@media (max-width: 400px) {
+  .title404 {
+    font-size: 96px;
+    margin: 60px 0 70px 0;
+  }
+}
 
 .text404 {
   font-size: 36px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   color: #FF6060;
-  margin: 0 0 120px 0;
+  margin: 0 10px 120px 10px;
+}
+@media (max-width: 400px) {
+  .text404 {
+    font-size: 18px;
+    margin: 0 10px 90px 10px;
+  }
 }
 
 .link404 {
@@ -349,6 +516,11 @@ header {
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
   color: #FF6060;
+}
+@media (max-width: 400px) {
+  .link404 {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

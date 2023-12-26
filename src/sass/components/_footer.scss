@@ -16,5 +16,11 @@ footer {
     font-size: 24px;
     font-weight: 500;
     font-family: $primary-font;
+
+    @media (max-width: 400px) {
+      font-size: 12px;
+      width: 133px;
+      margin: 0 auto;
+    }
   }
 }

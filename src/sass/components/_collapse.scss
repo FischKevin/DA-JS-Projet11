@@ -1,12 +1,17 @@
-@import '../abstracts/variables'; 
+@import '../abstracts/variables';
 
 .collapse-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 1240px;
+  width: calc(100% - 30px);
   align-items: center;
   margin: 40px auto 10px auto;
+
+  @media (max-width: 400px) {
+    margin: 25px auto 0 auto;
+  }
 
   .collapse-container {
     border-radius: 5px;
@@ -14,7 +19,11 @@
     width: 100%;
     font-family: $primary-font;
     margin-bottom: 30px;
-  
+
+    @media (max-width: 400px) {
+      margin-bottom: 25px;
+    }
+
     .collapse-title {
       cursor: pointer;
       display: flex;
@@ -27,13 +36,22 @@
       font-size: 24px;
       font-weight: 500;
 
+      @media (max-width: 400px) {
+        font-size: 13px;
+      }
+
       img {
         height: 24px;
         color: white;
         width: 24px;
+
+        @media (max-width: 400px) {
+          width: 16px;
+          height: 16px;
+        }
       }
     }
-  
+
     .collapse-content {
       padding: 20px;
       border-top: 1px solid #ccc;
@@ -43,8 +61,11 @@
       font-weight: 400;
       color: $primary-color;
       border-radius: 5px;
+
+      @media (max-width: 400px) {
+        font-size: 11px;
+        padding: 10px;
+      }
     }
   }
 }
-
-
