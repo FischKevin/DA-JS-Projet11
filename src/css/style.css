@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   margin: 40px auto 10px auto;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .collapse-section {
     margin: 25px auto 0 auto;
   }
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .collapse-section .collapse-container {
     margin-bottom: 25px;
   }
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   font-weight: 500;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .collapse-section .collapse-container .collapse-title {
     font-size: 13px;
   }
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   width: 24px;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .collapse-section .collapse-container .collapse-title img {
     width: 16px;
     height: 16px;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FF6060;
   border-radius: 5px;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .collapse-section .collapse-container .collapse-content {
     font-size: 11px;
     padding: 10px;
@@ -224,7 +224,7 @@ header {
   text-align: left;
   margin-bottom: 0px;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .topContainer .logementInfo .logementTitle {
     font-size: 18px;
   }
@@ -236,7 +236,7 @@ header {
   text-align: left;
   margin-top: 5px;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .topContainer .logementInfo .logementLocation {
     font-size: 14px;
   }
@@ -254,7 +254,7 @@ header {
   font-family: "Montserrat", sans-serif;
   padding: 5px 10px;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .topContainer .logementInfo .logementTags .logementTag {
     font-size: 10px;
   }
@@ -263,6 +263,11 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+}
+@media (max-width: 530px) {
+  .topContainer .hostContainer {
+    margin-top: 25px;
+  }
 }
 @media (max-width: 400px) {
   .topContainer .hostContainer {
@@ -286,6 +291,13 @@ header {
   width: 100px;
   text-align: right;
 }
+@media (max-width: 530px) {
+  .topContainer .hostContainer .hostInfoContainer .hostName {
+    font-size: 12px;
+    width: 60px;
+    margin-top: 0;
+  }
+}
 @media (max-width: 400px) {
   .topContainer .hostContainer .hostInfoContainer .hostName {
     font-size: 12px;
@@ -299,7 +311,7 @@ header {
   border-radius: 50px;
   margin-left: 15px;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .topContainer .hostContainer .hostInfoContainer .hostPicture {
     width: 32px;
     height: 32px;
@@ -312,7 +324,7 @@ header {
   width: 250px;
   text-align: right;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .topContainer .hostContainer .logementRating .rating {
     text-align: left;
     width: 140px;
@@ -330,7 +342,7 @@ header {
   max-width: 1240px;
   width: calc(100% - 30px);
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .logementInfo-collapseSection {
     flex-direction: column;
   }
@@ -340,7 +352,7 @@ header {
   width: 48%;
   margin-bottom: 50px;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .logementInfo-collapseSection .collapse-container {
     width: 100%;
     margin-bottom: 25px;
@@ -350,7 +362,7 @@ header {
   font-size: 18px;
   font-weight: 500;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .logementInfo-collapseSection .collapse-container .collapse-title {
     font-size: 13px;
   }
@@ -467,7 +479,7 @@ header {
   height: 36px;
   margin-left: 10px;
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .star {
     width: 18px;
     height: 18px;
