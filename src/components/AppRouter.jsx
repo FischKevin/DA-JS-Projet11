@@ -9,7 +9,7 @@ function AppRouter() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="APropos" element={<APropos />} />
+      <Route path="/APropos" element={<APropos />} />
       <Route path="/logement/:id" element={<LogementPage />} />
       <Route path="*" element={<Error404 />} />
     </Routes>

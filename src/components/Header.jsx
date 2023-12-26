@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
-import NavBar from './Navbar';
+import NavBar from './NavBar';
 
 function Header() {
   return (
