@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 function Logo({ color = 'red' }) {
-  const logoSrc =
-    color === 'white' ? '/src/assets/LOGOfooter.png' : '/src/assets/LOGO.png';
+  const logoSrc = color === 'white' ? '/LOGOfooter.png' : '/LOGO.png';
 
   return (
     <Link to="/">

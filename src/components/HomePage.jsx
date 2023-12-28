@@ -8,10 +8,7 @@ function HomePage() {
   return (
     <>
       <Header />
-      <Banner
-        image="src/assets/top_img.png"
-        text="Chez vous, partout et ailleurs"
-      />
+      <Banner image="/top_img.png" text="Chez vous, partout et ailleurs" />
       <Gallery />
       <Footer />
     </>
