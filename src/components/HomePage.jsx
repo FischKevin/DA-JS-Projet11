@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Gallery from './Gallery';
 import Footer from './Footer';
 
+// function to render the homepage
 function HomePage() {
   return (
     <>

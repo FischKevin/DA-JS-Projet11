@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 
+// function to render the footer
 function Footer() {
   return (
     <footer className="footer">

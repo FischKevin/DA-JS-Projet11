@@ -5,6 +5,7 @@ import Banner from './Banner';
 import Collapse from './Collapse';
 
 function APropos() {
+  // data for collapsible sections
   const collapseData = [
     {
       title: 'Fiabilité',
@@ -32,7 +33,9 @@ function APropos() {
     <>
       <Header />
       <Banner image="/about_img.png" text="" />
+      {/* Collapsible sections for displaying information */}
       <div className="collapse-section">
+        {/* Collapse component that shows title and content */}
         {collapseData.map((data, index) => (
           <Collapse key={index} title={data.title} content={data.content} />
         ))}
