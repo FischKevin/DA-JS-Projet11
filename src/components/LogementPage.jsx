@@ -10,7 +10,7 @@ function LogementPage() {
   const [logement, setLogement] = useState(null);
   // Extracting the 'id' parameter from the URL
   let { id } = useParams();
-  // Hook for programmatically navigating between pages
+  // Hook for navigating between pages
   let navigate = useNavigate();
 
   // useEffect to fetch logement data based on the 'id' parameter
